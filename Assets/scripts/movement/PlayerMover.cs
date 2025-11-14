@@ -10,6 +10,8 @@ public class PlayerMover : MonoBehaviour
 
     void Update()
     {
+        if(!mover.CanMove) return;
+
         if(Input.GetButtonDown("Horizontal")){
             float xDir = Input.GetAxisRaw("Horizontal");        
             mover.Move(xDir, 0);

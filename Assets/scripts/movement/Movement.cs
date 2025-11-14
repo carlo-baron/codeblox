@@ -4,6 +4,7 @@ using System.Collections.Generic;
 public class Movement : MonoBehaviour, IMover
 {
     public Queue<Vector2> Moves { get; private set; }
+    public bool CanMove { get; set; } = true;
     int CELL_SIZE = 1;
 
     public void Start(){

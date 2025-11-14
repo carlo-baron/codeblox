@@ -2488,7 +2488,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteMover
   movePoint: {fileID: 827419572}
-  speed: 10
+  speed: 5
+  distanceThreshold: 0.05
 --- !u!1 &1980387199
 GameObject:
   m_ObjectHideFlags: 0
