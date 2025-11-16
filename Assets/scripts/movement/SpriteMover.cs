@@ -7,8 +7,6 @@ public class SpriteMover : MonoBehaviour
     [SerializeField]
     private float speed = 5f;
     private IMover movePointMover;
-    [SerializeField]
-    private float distanceThreshold = 0.05f;
 
     void Start(){
         movePointMover = movePoint.GetComponent<IMover>();
@@ -25,13 +23,9 @@ public class SpriteMover : MonoBehaviour
                 Time.deltaTime * speed
             );
 
-            float distance = Vector2.Distance((Vector2)transform.position, targetPos);
-            if(distance <= distanceThreshold){
-                movePointMover.CanMove = true;
-            }
-
             if((Vector2)transform.position == targetPos){
                 movePointMover.Moves.Dequeue();
+                movePointMover.CanMove = true;
             }
         }
     }

@@ -1,6 +1,5 @@
 using UnityEngine;
 using System.Collections.Generic;
-using System.Linq;
 
 public class Mover : MonoBehaviour, IMover
 {
@@ -13,7 +12,7 @@ public class Mover : MonoBehaviour, IMover
         Moves = new Queue<Vector2>();
     }
 
-    public void Move(float x, float y)
+    public bool Move(float x, float y)
     {
         x = Mathf.Clamp(x, -1, 1);
         y = Mathf.Clamp(y, -1, 1);
@@ -22,10 +21,12 @@ public class Mover : MonoBehaviour, IMover
 
         RaycastHit2D hit = Obstruction(dir);
 
-        if (hit.collider && hit.collider.gameObject != gameObject)
+        if (hit.collider)
         {
-            TryMoveObstruction(hit.collider.gameObject, dir);
-            return;
+            bool isObstructionMoved = TryMoveObstruction(hit.collider.gameObject, dir);
+            if(!isObstructionMoved){
+                return false;
+            }
         }
 
         Vector2 newPos = new Vector2(
@@ -35,14 +36,17 @@ public class Mover : MonoBehaviour, IMover
 
         Moves.Enqueue(newPos);
         transform.position = newPos;
+
+        return true;
     }
 
-    private void TryMoveObstruction(GameObject hit, Vector2 dir)
+    private bool TryMoveObstruction(GameObject hit, Vector2 dir)
     {
         IMover movable = hit.GetComponentInChildren<IMover>();
         if (movable != null){
-            movable.Move(dir.x, dir.y);
+            return movable.Move(dir.x, dir.y);
         }
+        return false;
     }
 
     private RaycastHit2D Obstruction(Vector2 dir)
@@ -53,7 +57,6 @@ public class Mover : MonoBehaviour, IMover
         {
             if (hit.collider != null && hit.collider.transform != transform)
             {
-                print(transform.parent.name + ": " + hit.collider.transform.name);
                 return hit;
             }
         }
