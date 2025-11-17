@@ -3,21 +3,28 @@ using UnityEngine;
 public class BloxpointParent : MonoBehaviour
 {
     Bloxpoint[] children;
+    [SerializeField]
+    LevelEnd levelEnd;
 
     void Awake(){
         children = GetComponentsInChildren<Bloxpoint>();
     }
 
     public void Run(){
-        print(GetBloxValueString());
+        bool isCorrect = SyntaxCheck();
+        if(isCorrect){
+            levelEnd.gameObject.SetActive(true);
+            levelEnd.DisplayMessage(true);
+        }
     }  
 
-    string GetBloxValueString(){
-        string result = "";
+    bool SyntaxCheck(){
         foreach(Bloxpoint child in children){
-            result += child.BloxKeyword;
+            if(!child.IsProperValue){
+                return false;
+            }
         }
 
-        return result;
+        return true;
     }
 }
