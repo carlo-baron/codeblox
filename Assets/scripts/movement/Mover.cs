@@ -5,7 +5,9 @@ public class Mover : MonoBehaviour, IMover
 {
     public Queue<Vector2> Moves { get; private set; }
     public bool CanMove { get; set; } = true;
-    int CELL_SIZE = 1;
+
+    [SerializeField]
+    private MoveableData movableData;
 
     public void Start()
     {
@@ -30,8 +32,8 @@ public class Mover : MonoBehaviour, IMover
         }
 
         Vector2 newPos = new Vector2(
-            transform.position.x + (x * CELL_SIZE),
-            transform.position.y + (y * CELL_SIZE)
+            transform.position.x + (x * movableData.CELL_SIZE),
+            transform.position.y + (y * movableData.CELL_SIZE)
         );
 
         Moves.Enqueue(newPos);
@@ -51,7 +53,7 @@ public class Mover : MonoBehaviour, IMover
 
     private RaycastHit2D Obstruction(Vector2 dir)
     {
-        RaycastHit2D[] hits = Physics2D.RaycastAll(transform.position, dir, 1f);
+        RaycastHit2D[] hits = Physics2D.RaycastAll(transform.position, dir, 1f, movableData.obstructionLayers);
 
         foreach (var hit in hits)
         {

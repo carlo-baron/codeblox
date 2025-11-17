@@ -397,6 +397,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85c5fd8d1d67f724bb6e3c7ad35cdb89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Movement
+  movableData: {fileID: 11400000, guid: 09699e172ee14344abd72906dae6ba1b, type: 2}
 --- !u!1 &1516642417
 GameObject:
   m_ObjectHideFlags: 0
@@ -411,7 +412,7 @@ GameObject:
   - component: {fileID: 1516642423}
   - component: {fileID: 1516642422}
   - component: {fileID: 1516642421}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Level
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1443,7 +1444,7 @@ TilemapRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -659542323
   m_SortingLayer: -1
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -2741,25 +2742,15 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: -1, y: 4, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 129
+  - m_RefCount: 128
     m_Data: {fileID: 11400000, guid: 5e754dff834d5c64eb26661b514a48d0, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 129
+  - m_RefCount: 128
     m_Data: {fileID: -1016952914, guid: e3e47a3ce9c59404dbb322f395683cde, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 129
+  - m_RefCount: 128
     m_Data:
       e00: 1
       e01: 0
@@ -2778,7 +2769,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 129
+  - m_RefCount: 128
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -2988,6 +2979,63 @@ Transform:
   - {fileID: 1582822967}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1078031090639119267
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 741567866931248346, guid: b5e296216e516a44fb7ca6e0e08e630f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 741567866931248346, guid: b5e296216e516a44fb7ca6e0e08e630f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 741567866931248346, guid: b5e296216e516a44fb7ca6e0e08e630f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 741567866931248346, guid: b5e296216e516a44fb7ca6e0e08e630f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 741567866931248346, guid: b5e296216e516a44fb7ca6e0e08e630f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 741567866931248346, guid: b5e296216e516a44fb7ca6e0e08e630f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 741567866931248346, guid: b5e296216e516a44fb7ca6e0e08e630f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 741567866931248346, guid: b5e296216e516a44fb7ca6e0e08e630f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 741567866931248346, guid: b5e296216e516a44fb7ca6e0e08e630f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 741567866931248346, guid: b5e296216e516a44fb7ca6e0e08e630f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8324409666421548936, guid: b5e296216e516a44fb7ca6e0e08e630f, type: 3}
+      propertyPath: m_Name
+      value: Bloxpoint
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b5e296216e516a44fb7ca6e0e08e630f, type: 3}
 --- !u!1001 &5521977307586157385
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3054,3 +3102,4 @@ SceneRoots:
   - {fileID: 1713218968}
   - {fileID: 1980387201}
   - {fileID: 5521977307586157385}
+  - {fileID: 1078031090639119267}
