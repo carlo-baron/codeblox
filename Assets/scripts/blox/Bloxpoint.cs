@@ -12,16 +12,22 @@ public class Bloxpoint : MonoBehaviour
         private set {}
     }
 
-    private string BloxKeyword = "";
+    public string BloxKeyword { get; private set; } = "";
+    private Collider2D currentBlock;
 
     void OnTriggerEnter2D(Collider2D other){
         if(other.gameObject.layer == LayerMask.NameToLayer("blox")){
             BloxData bloxData = other.transform.parent.gameObject.GetComponentInChildren<IBlox>().Value;
+
+            currentBlock = other;
             BloxKeyword = bloxData.Keyword;
         }
     }
 
     void OnTriggerExit2D(Collider2D other){
-        BloxKeyword = "";
+        if(other == currentBlock){
+            BloxKeyword = "";
+            currentBlock = null;
+        }
     }
 }

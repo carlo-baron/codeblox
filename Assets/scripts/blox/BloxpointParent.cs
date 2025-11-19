@@ -6,12 +6,13 @@ public class BloxpointParent : MonoBehaviour
     [SerializeField]
     LevelEnd levelEnd;
 
-    void Awake(){
+    void Start(){
         children = GetComponentsInChildren<Bloxpoint>();
     }
 
     public void Run(){
         bool isCorrect = SyntaxCheck();
+        print(isCorrect);
         if(isCorrect){
             levelEnd.gameObject.SetActive(true);
             levelEnd.DisplayMessage(true);
