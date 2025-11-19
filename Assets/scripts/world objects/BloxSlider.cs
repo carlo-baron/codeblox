@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class BloxSlider : MonoBehaviour
 {
+    Animator anim;
+    SpriteRenderer spriteRenderer;
+
     public enum Direction{
         LEFT = 0,
         UP = 90,
@@ -12,7 +15,12 @@ public class BloxSlider : MonoBehaviour
     public Direction direction;
 
     void Start(){
-        transform.Rotate(0, 0, (float)direction);
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        anim = GetComponentInChildren<Animator>();
+
+        Vector2 dir = GetDir(); 
+        anim.SetFloat("Vertical", dir.y);
+        spriteRenderer.flipX = dir.x <= 0;
     }
 
     void OnTriggerEnter2D(Collider2D other){
