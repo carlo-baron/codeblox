@@ -8,19 +8,23 @@ public class PlayerMover : MonoBehaviour
         mover = GetComponent<IMover>();
     }
 
+    public float XDir { get; private set;}
+    public float YDir { get; private set;}
+
     void Update()
     {
+        XDir = Input.GetAxisRaw("Horizontal");        
+        YDir = Input.GetAxisRaw("Vertical");        
+
         if(!mover.CanMove) {
             return;
         };
 
         if(Input.GetButton("Horizontal")){
-            float xDir = Input.GetAxisRaw("Horizontal");        
-            mover.Move(xDir, 0);
+            mover.Move(XDir, 0);
             return;
         }else if(Input.GetButton("Vertical")){
-            float yDir = Input.GetAxisRaw("Vertical");        
-            mover.Move(0, yDir);
+            mover.Move(0, YDir);
             return;
         }
     }
