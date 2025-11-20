@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using TMPro;
 
 public class LevelManager : MonoBehaviour
@@ -16,6 +15,7 @@ public class LevelManager : MonoBehaviour
     }
 
     public void ResetLevel(){
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        int index = GameManager.Instance.CurrentSceneIndex; 
+        GameManager.Instance.LoadScene(index, "Level " + index);
     }
 }

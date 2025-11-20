@@ -5,13 +5,18 @@ using TMPro;
 
 public class SceneLoader : MonoBehaviour
 {
-    [SerializeField]
-    private Animator transition;
-    [SerializeField]
-    private TextMeshProUGUI transitionMessage;
+    [SerializeField] private Animator transition;
+    [SerializeField] private TextMeshProUGUI transitionMessage;
 
-    void Start(){
+    void Start() {
         transitionMessage.text = GameManager.Instance.sceneTransitionMessage;
+        Invoke("ClearMessage", 3f);
+    }
+
+    void ClearMessage(){
+        transitionMessage.text = "";
+        GameManager.Instance.sceneTransitionMessage = "";
+        GameManager.Instance.gameState = GameManager.GameState.PLAYING;
     }
 
     public void Transition(int sceneIndex){
@@ -22,9 +27,7 @@ public class SceneLoader : MonoBehaviour
         transition.SetTrigger("start");
         GameManager.Instance.gameState = GameManager.GameState.LOADING;
 
-        yield return new WaitForSeconds(1);
-
-        GameManager.Instance.gameState = GameManager.GameState.PLAYING;
-        SceneManager.LoadScene(sceneIndex);
+        yield return SceneManager.LoadSceneAsync(sceneIndex);
     }
 }
+

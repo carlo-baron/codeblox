@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -6,6 +7,12 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private SceneLoader sceneLoader;
     public string sceneTransitionMessage = "";
+
+    public int CurrentSceneIndex {
+        get {
+            return SceneManager.GetActiveScene().buildIndex;
+        }
+    }
 
     public enum GameState{
         LOADING,
@@ -15,17 +22,17 @@ public class GameManager : MonoBehaviour
     public GameState gameState;
 
     void Awake(){
-        gameState = GameState.PLAYING;
+        sceneLoader = FindFirstObjectByType<SceneLoader>();
         if(Instance != null && Instance != this){
             Destroy(gameObject);
         }else{
             Instance = this;
             DontDestroyOnLoad(gameObject);
         }
+        gameState = GameState.PLAYING;
     }
 
     public void LoadScene(int sceneIndex, string message = ""){
-        print("Load");
         sceneTransitionMessage = message;
         if(sceneLoader == null) {
             sceneLoader = FindFirstObjectByType<SceneLoader>();
