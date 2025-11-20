@@ -21,6 +21,16 @@ public class Mover : MonoBehaviour, IMover
 
         Vector2 dir = new Vector2(x, y);
 
+        RaycastHit2D hit = Obstruction(dir);
+
+        if (hit.collider)
+        {
+            bool isObstructionMoved = TryMoveObstruction(hit.collider.gameObject, dir);
+            if(!isObstructionMoved){
+                return false;
+            }
+        }
+
         StartCoroutine(MoveCharacter(dir));
         return true;
     }
@@ -29,16 +39,6 @@ public class Mover : MonoBehaviour, IMover
         isMoving = true;
 
         float elapsedTime = 0;
-        RaycastHit2D hit = Obstruction(dir);
-
-        if (hit.collider)
-        {
-            bool isObstructionMoved = TryMoveObstruction(hit.collider.gameObject, dir);
-            if(!isObstructionMoved){
-                isMoving = false;
-                yield break;
-            }
-        }
 
         originalPosition = transform.position;
         targetPosition = originalPosition + dir;
