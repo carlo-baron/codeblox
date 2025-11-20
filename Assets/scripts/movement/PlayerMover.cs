@@ -3,6 +3,7 @@ using UnityEngine;
 public class PlayerMover : MonoBehaviour
 {
     public IMover mover;
+    bool allowInput = true;
 
     void Start(){
         mover = GetComponent<IMover>();
@@ -15,6 +16,7 @@ public class PlayerMover : MonoBehaviour
     {
         if(GameManager.Instance.gameState == GameManager.GameState.LOADING || GameManager.Instance.gameState == GameManager.GameState.OVER) return;
         if(mover.IsMoving) return;
+        if(!allowInput) return;
 
         XDir = Input.GetAxisRaw("Horizontal");        
         YDir = Input.GetAxisRaw("Vertical");        
@@ -26,5 +28,15 @@ public class PlayerMover : MonoBehaviour
             mover.Move(0, YDir);
             return;
         }
+    }
+
+    void OnTriggerEnter2D(Collider2D other){
+        if(other.gameObject.layer == LayerMask.NameToLayer("slider")){
+            allowInput = false;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D other){
+        allowInput = true;
     }
 }

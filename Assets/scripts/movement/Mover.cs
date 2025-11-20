@@ -7,7 +7,9 @@ public class Mover : MonoBehaviour, IMover
     [SerializeField]
     private MoveableData movableData;
 
-    public bool IsMoving { get; set; } = false;
+    [SerializeField]
+    private bool isMoving = false;
+    public bool IsMoving => isMoving;
     private Vector2 originalPosition, targetPosition;
     [SerializeField]
     private float timeToMove = 0.2f;
@@ -24,7 +26,7 @@ public class Mover : MonoBehaviour, IMover
     }
 
     IEnumerator MoveCharacter(Vector2 dir){
-        IsMoving = true;
+        isMoving = true;
 
         float elapsedTime = 0;
         RaycastHit2D hit = Obstruction(dir);
@@ -33,7 +35,7 @@ public class Mover : MonoBehaviour, IMover
         {
             bool isObstructionMoved = TryMoveObstruction(hit.collider.gameObject, dir);
             if(!isObstructionMoved){
-                IsMoving = false;
+                isMoving = false;
                 yield break;
             }
         }
@@ -50,7 +52,7 @@ public class Mover : MonoBehaviour, IMover
 
         transform.position = targetPosition;
 
-        IsMoving = false;
+        isMoving = false;
     }
 
     private bool TryMoveObstruction(GameObject hit, Vector2 dir)

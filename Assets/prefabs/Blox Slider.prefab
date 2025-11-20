@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2392059447547425058}
   - component: {fileID: 67458999067967929}
   - component: {fileID: 1865040403769598430}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: gfx
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 1106105322683719780}
   - component: {fileID: 6491284665516022648}
   - component: {fileID: 1367162766705613105}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Blox Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}

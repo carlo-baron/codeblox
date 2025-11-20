@@ -25,11 +25,8 @@ public class BloxSlider : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D other) {
         IMover mover = other.GetComponent<IMover>();
-        mover.IsMoving = true;
         if (mover == null) return;
-
-        if (other.transform.position == transform.position) {
-
+        if (!mover.IsMoving) {
             Vector2 dir = GetDir();
             mover.Move(dir.x, dir.y);
         }
