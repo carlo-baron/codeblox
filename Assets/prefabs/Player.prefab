@@ -30,7 +30,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7694433880058797215}
-  - {fileID: 5070174514084885989}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5470445805909390706
@@ -43,7 +42,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5070174514084885989}
   - component: {fileID: 1250056802946143734}
-  - component: {fileID: 2977220202314487122}
   - component: {fileID: 6364294575893085995}
   - component: {fileID: 2507581798652301714}
   m_Layer: 3
@@ -66,7 +64,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 359000431908757321}
+  m_Father: {fileID: 7694433880058797215}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1250056802946143734
 SpriteRenderer:
@@ -126,20 +124,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2977220202314487122
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5470445805909390706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec6c940a5a4b57149b6be718a2c7834d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SpriteMover
-  movePoint: {fileID: 8452691049700855824}
-  speed: 5
 --- !u!95 &6364294575893085995
 Animator:
   serializedVersion: 7
@@ -205,7 +189,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 5070174514084885989}
   m_Father: {fileID: 359000431908757321}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4762576428023583172
@@ -233,6 +218,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Movement
   movableData: {fileID: 11400000, guid: 09699e172ee14344abd72906dae6ba1b, type: 2}
+  timeToMove: 0.2
 --- !u!61 &993856990481860290
 BoxCollider2D:
   m_ObjectHideFlags: 0
