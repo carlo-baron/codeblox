@@ -13,6 +13,8 @@ public class PlayerMover : MonoBehaviour
 
     void Update()
     {
+        if(GameManager.Instance.gameState == GameManager.GameState.LOADING || GameManager.Instance.gameState == GameManager.GameState.OVER) return;
+
         XDir = Input.GetAxisRaw("Horizontal");        
         YDir = Input.GetAxisRaw("Vertical");        
 
