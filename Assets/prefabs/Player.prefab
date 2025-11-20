@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 359000431908757321}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 2977220202314487122}
   - component: {fileID: 6364294575893085995}
   - component: {fileID: 2507581798652301714}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PlayerGFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -186,7 +186,7 @@ GameObject:
   - component: {fileID: 4762576428023583172}
   - component: {fileID: 426280923460294267}
   - component: {fileID: 993856990481860290}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: movePoint
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
