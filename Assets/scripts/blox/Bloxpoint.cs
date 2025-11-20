@@ -17,10 +17,11 @@ public class Bloxpoint : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other){
         if(other.gameObject.layer == LayerMask.NameToLayer("blox")){
-            BloxData bloxData = other.transform.parent.gameObject.GetComponentInChildren<IBlox>().Value;
+            IBlox bloxData = other.transform.parent.gameObject.GetComponentInChildren<IBlox>();
+            if(bloxData == null) return;
 
             currentBlock = other;
-            BloxKeyword = bloxData.Keyword;
+            BloxKeyword = bloxData.Value.Keyword;
         }
     }
 

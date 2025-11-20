@@ -1,18 +1,16 @@
 using UnityEngine;
+using System.Collections;
 using System.Collections.Generic;
 
 public class Mover : MonoBehaviour, IMover
 {
-    public Queue<Vector2> Moves { get; private set; }
-    public bool CanMove { get; set; } = true;
-
     [SerializeField]
     private MoveableData movableData;
 
-    public void Start()
-    {
-        Moves = new Queue<Vector2>();
-    }
+    public bool IsMoving { get; set; } = false;
+    private Vector2 originalPosition, targetPosition;
+    [SerializeField]
+    private float timeToMove = 0.2f;
 
     public bool Move(float x, float y)
     {
@@ -21,25 +19,38 @@ public class Mover : MonoBehaviour, IMover
 
         Vector2 dir = new Vector2(x, y);
 
+        StartCoroutine(MoveCharacter(dir));
+        return true;
+    }
+
+    IEnumerator MoveCharacter(Vector2 dir){
+        IsMoving = true;
+
+        float elapsedTime = 0;
         RaycastHit2D hit = Obstruction(dir);
 
         if (hit.collider)
         {
             bool isObstructionMoved = TryMoveObstruction(hit.collider.gameObject, dir);
             if(!isObstructionMoved){
-                return false;
+                IsMoving = false;
+                yield break;
             }
         }
 
-        Vector2 newPos = new Vector2(
-            transform.position.x + (x * movableData.CELL_SIZE),
-            transform.position.y + (y * movableData.CELL_SIZE)
-        );
+        originalPosition = transform.position;
+        targetPosition = originalPosition + dir;
 
-        Moves.Enqueue(newPos);
-        transform.position = newPos;
+        while(elapsedTime < timeToMove){
+            transform.position = Vector2.Lerp(originalPosition, targetPosition, elapsedTime/timeToMove);
 
-        return true;
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        transform.position = targetPosition;
+
+        IsMoving = false;
     }
 
     private bool TryMoveObstruction(GameObject hit, Vector2 dir)
@@ -53,7 +64,7 @@ public class Mover : MonoBehaviour, IMover
 
     private RaycastHit2D Obstruction(Vector2 dir)
     {
-        RaycastHit2D[] hits = Physics2D.RaycastAll(transform.position, dir, 1f, movableData.obstructionLayers);
+        RaycastHit2D[] hits = Physics2D.RaycastAll(transform.position, dir, .7f, movableData.obstructionLayers);
 
         foreach (var hit in hits)
         {

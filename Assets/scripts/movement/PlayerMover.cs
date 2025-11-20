@@ -14,13 +14,10 @@ public class PlayerMover : MonoBehaviour
     void Update()
     {
         if(GameManager.Instance.gameState == GameManager.GameState.LOADING || GameManager.Instance.gameState == GameManager.GameState.OVER) return;
+        if(mover.IsMoving) return;
 
         XDir = Input.GetAxisRaw("Horizontal");        
         YDir = Input.GetAxisRaw("Vertical");        
-
-        if(!mover.CanMove) {
-            return;
-        };
 
         if(Input.GetButton("Horizontal")){
             mover.Move(XDir, 0);
