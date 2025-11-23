@@ -1735,37 +1735,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2139117694516207583, guid: 1689123ba5a3361449583cac6363a0ba, type: 3}
   m_PrefabInstance: {fileID: 866094303}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &911912541
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 911912542}
-  m_Layer: 0
-  m_Name: Audio
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &911912542
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 911912541}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.15682, y: -0.33103, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &925257809
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7810,5 +7779,4 @@ SceneRoots:
   - {fileID: 7581603731843060536}
   - {fileID: 1930564726}
   - {fileID: 2364487907977019124}
-  - {fileID: 911912542}
   - {fileID: 487665032}
