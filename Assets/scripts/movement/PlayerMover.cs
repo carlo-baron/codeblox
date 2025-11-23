@@ -14,7 +14,7 @@ public class PlayerMover : MonoBehaviour
 
     void Update()
     {
-        if(GameManager.Instance.gameState == GameManager.GameState.LOADING || GameManager.Instance.gameState == GameManager.GameState.OVER) return;
+        if(GameManager.Instance && (GameManager.Instance.gameState == GameManager.GameState.LOADING || GameManager.Instance.gameState == GameManager.GameState.OVER)) return;
         if(mover.IsMoving) return;
         if(!allowInput) return;
 

@@ -16,6 +16,15 @@ public class LevelManager : MonoBehaviour
 
     public void ResetLevel(){
         int index = GameManager.Instance.CurrentSceneIndex; 
+        CallLoadLevel(index);
+    }
+
+    public void NextLevel(){
+        int index = GameManager.Instance.CurrentSceneIndex + 1; 
+        CallLoadLevel(index);
+    }
+
+    void CallLoadLevel(int index){
         GameManager.Instance.LoadScene(index, "Level " + index);
     }
 }
