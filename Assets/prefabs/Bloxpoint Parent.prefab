@@ -46,3 +46,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BloxpointParent
   levelEnd: {fileID: 0}
   outputTextController: {fileID: 0}
+  correct: {fileID: 8300000, guid: 3c61bf01a5549004c99543d219c5e972, type: 3}
+  incorrect: {fileID: 8300000, guid: c4ccd99e6bd78d54d98d1893fc99ba11, type: 3}

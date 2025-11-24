@@ -13,6 +13,11 @@ public class Mover : MonoBehaviour, IMover
     private Vector2 originalPosition, targetPosition;
     [SerializeField]
     private float timeToMove = 0.2f;
+    private float directionScalar = 1;
+
+    void Start(){
+        directionScalar = transform.parent.localScale.x;
+    }
 
     public bool Move(float x, float y)
     {
@@ -41,7 +46,7 @@ public class Mover : MonoBehaviour, IMover
         float elapsedTime = 0;
 
         originalPosition = transform.position;
-        targetPosition = originalPosition + dir;
+        targetPosition = originalPosition + (dir * directionScalar);
 
         while(elapsedTime < timeToMove){
             transform.position = Vector2.Lerp(originalPosition, targetPosition, elapsedTime/timeToMove);

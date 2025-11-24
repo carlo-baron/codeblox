@@ -218,6 +218,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Movement
   movableData: {fileID: 11400000, guid: 09699e172ee14344abd72906dae6ba1b, type: 2}
+  moveAudio: {fileID: 8300000, guid: f7462f8e8c5f7c34288d090dd7175f4b, type: 3}
+  isMoving: 0
   timeToMove: 0.2
 --- !u!61 &993856990481860290
 BoxCollider2D:

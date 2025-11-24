@@ -9,6 +9,7 @@ public class SceneLoader : MonoBehaviour
     [SerializeField] private TextMeshProUGUI transitionMessage;
 
     void Start() {
+        AudioManager.Instance.FadeIn(3);
         transitionMessage.text = GameManager.Instance.sceneTransitionMessage;
         Invoke("ClearMessage", 3f);
     }

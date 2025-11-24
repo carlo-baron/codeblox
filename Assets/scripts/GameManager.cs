@@ -8,6 +8,13 @@ public class GameManager : MonoBehaviour
     private SceneLoader sceneLoader;
     public string sceneTransitionMessage = "";
 
+    private int endLevelIndex = 10;
+
+    public bool startCounting;
+    private float startTime;
+    public float Playtime { get; private set; } = 0;
+    public int Restarts { get; private set; }
+
     public int CurrentSceneIndex {
         get {
             return SceneManager.GetActiveScene().buildIndex;
@@ -19,6 +26,7 @@ public class GameManager : MonoBehaviour
         PLAYING,
         OVER
     }
+
     public GameState gameState;
 
     void Awake(){
@@ -32,7 +40,24 @@ public class GameManager : MonoBehaviour
         gameState = GameState.PLAYING;
     }
 
+    void Update(){
+        if(startCounting){
+            startTime = Time.time;
+            startCounting = false;
+        }
+    }
+
+    void EndGame(){
+        gameState = GameState.OVER;
+        Playtime = Time.time - startTime;
+    }
+
     public void LoadScene(int sceneIndex, string message = ""){
+        if(sceneIndex == CurrentSceneIndex) Restarts += 1; 
+        if(sceneIndex == endLevelIndex) {
+            EndGame();
+        }
+
         sceneTransitionMessage = message;
         if(sceneLoader == null) {
             sceneLoader = FindFirstObjectByType<SceneLoader>();

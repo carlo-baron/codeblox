@@ -178,7 +178,7 @@ PrefabInstance:
     - target: {fileID: 5790160534953873507, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: value
       value: 
-      objectReference: {fileID: 11400000, guid: b4d14802c2ebdb04885e589abd3ce572, type: 2}
+      objectReference: {fileID: 11400000, guid: a50332becc97b3e4f9f1ec0726db6a64, type: 2}
     - target: {fileID: 8734814178722551829, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: m_Name
       value: Blox (25)
@@ -255,7 +255,7 @@ PrefabInstance:
     - target: {fileID: 5790160534953873507, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: value
       value: 
-      objectReference: {fileID: 11400000, guid: b4d14802c2ebdb04885e589abd3ce572, type: 2}
+      objectReference: {fileID: 11400000, guid: 2bfce31b533143c49ab4b9ce84dd207e, type: 2}
     - target: {fileID: 8734814178722551829, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: m_Name
       value: Blox (19)
@@ -331,7 +331,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6643432653011195377, guid: b5e296216e516a44fb7ca6e0e08e630f, type: 3}
       propertyPath: properValue
-      value: '"World"'
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8324409666421548936, guid: b5e296216e516a44fb7ca6e0e08e630f, type: 3}
       propertyPath: m_Name
@@ -473,7 +473,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6643432653011195377, guid: b5e296216e516a44fb7ca6e0e08e630f, type: 3}
       propertyPath: properValue
-      value: '"World"'
+      value: print
       objectReference: {fileID: 0}
     - target: {fileID: 8324409666421548936, guid: b5e296216e516a44fb7ca6e0e08e630f, type: 3}
       propertyPath: m_Name
@@ -691,7 +691,7 @@ PrefabInstance:
     - target: {fileID: 5790160534953873507, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: value
       value: 
-      objectReference: {fileID: 11400000, guid: b4d14802c2ebdb04885e589abd3ce572, type: 2}
+      objectReference: {fileID: 11400000, guid: 04695e46967b82b4d8a4fbbb0ee23a20, type: 2}
     - target: {fileID: 8734814178722551829, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: m_Name
       value: Blox (10)
@@ -768,7 +768,7 @@ PrefabInstance:
     - target: {fileID: 5790160534953873507, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: value
       value: 
-      objectReference: {fileID: 11400000, guid: b4d14802c2ebdb04885e589abd3ce572, type: 2}
+      objectReference: {fileID: 11400000, guid: 6505eba040b262540b59eeaf51582faf, type: 2}
     - target: {fileID: 8734814178722551829, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: m_Name
       value: Blox (12)
@@ -908,7 +908,7 @@ PrefabInstance:
     - target: {fileID: 5790160534953873507, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: value
       value: 
-      objectReference: {fileID: 11400000, guid: b4d14802c2ebdb04885e589abd3ce572, type: 2}
+      objectReference: {fileID: 11400000, guid: f35ce9febc02654468adb345112bfd62, type: 2}
     - target: {fileID: 8734814178722551829, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: m_Name
       value: Blox (30)
@@ -1049,7 +1049,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6643432653011195377, guid: b5e296216e516a44fb7ca6e0e08e630f, type: 3}
       propertyPath: properValue
-      value: '"World"'
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8324409666421548936, guid: b5e296216e516a44fb7ca6e0e08e630f, type: 3}
       propertyPath: m_Name
@@ -1124,7 +1124,7 @@ PrefabInstance:
     - target: {fileID: 5790160534953873507, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: value
       value: 
-      objectReference: {fileID: 11400000, guid: b4d14802c2ebdb04885e589abd3ce572, type: 2}
+      objectReference: {fileID: 11400000, guid: a50332becc97b3e4f9f1ec0726db6a64, type: 2}
     - target: {fileID: 8734814178722551829, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: m_Name
       value: Blox (26)
@@ -1201,7 +1201,7 @@ PrefabInstance:
     - target: {fileID: 5790160534953873507, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: value
       value: 
-      objectReference: {fileID: 11400000, guid: b4d14802c2ebdb04885e589abd3ce572, type: 2}
+      objectReference: {fileID: 11400000, guid: 55bfaba5882400745965b2e1859feafb, type: 2}
     - target: {fileID: 8734814178722551829, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: m_Name
       value: Blox (33)
@@ -1415,7 +1415,7 @@ PrefabInstance:
     - target: {fileID: 5790160534953873507, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: value
       value: 
-      objectReference: {fileID: 11400000, guid: b4d14802c2ebdb04885e589abd3ce572, type: 2}
+      objectReference: {fileID: 11400000, guid: 6505eba040b262540b59eeaf51582faf, type: 2}
     - target: {fileID: 8734814178722551829, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: m_Name
       value: Blox (11)
@@ -1492,7 +1492,7 @@ PrefabInstance:
     - target: {fileID: 5790160534953873507, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: value
       value: 
-      objectReference: {fileID: 11400000, guid: b4d14802c2ebdb04885e589abd3ce572, type: 2}
+      objectReference: {fileID: 11400000, guid: e6be501a2ff3e5e40a5c837c1e29a769, type: 2}
     - target: {fileID: 8734814178722551829, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: m_Name
       value: Blox (14)
@@ -1896,7 +1896,7 @@ PrefabInstance:
     - target: {fileID: 5790160534953873507, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: value
       value: 
-      objectReference: {fileID: 11400000, guid: b4d14802c2ebdb04885e589abd3ce572, type: 2}
+      objectReference: {fileID: 11400000, guid: f35ce9febc02654468adb345112bfd62, type: 2}
     - target: {fileID: 8734814178722551829, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: m_Name
       value: Blox (34)
@@ -1973,7 +1973,7 @@ PrefabInstance:
     - target: {fileID: 5790160534953873507, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: value
       value: 
-      objectReference: {fileID: 11400000, guid: b4d14802c2ebdb04885e589abd3ce572, type: 2}
+      objectReference: {fileID: 11400000, guid: a50332becc97b3e4f9f1ec0726db6a64, type: 2}
     - target: {fileID: 8734814178722551829, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: m_Name
       value: Blox (24)
@@ -2050,7 +2050,7 @@ PrefabInstance:
     - target: {fileID: 5790160534953873507, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: value
       value: 
-      objectReference: {fileID: 11400000, guid: b4d14802c2ebdb04885e589abd3ce572, type: 2}
+      objectReference: {fileID: 11400000, guid: 530823149ef7e564db8938e3a9c64d57, type: 2}
     - target: {fileID: 8734814178722551829, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: m_Name
       value: Blox (5)
@@ -2127,7 +2127,7 @@ PrefabInstance:
     - target: {fileID: 5790160534953873507, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: value
       value: 
-      objectReference: {fileID: 11400000, guid: b4d14802c2ebdb04885e589abd3ce572, type: 2}
+      objectReference: {fileID: 11400000, guid: 930e7fad08d036044b2469fca2cd2c8b, type: 2}
     - target: {fileID: 8734814178722551829, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: m_Name
       value: Blox (21)
@@ -2208,7 +2208,7 @@ PrefabInstance:
     - target: {fileID: 5790160534953873507, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: value
       value: 
-      objectReference: {fileID: 11400000, guid: 60cddafa8d13210409cf30a219e57df7, type: 2}
+      objectReference: {fileID: 11400000, guid: f35ce9febc02654468adb345112bfd62, type: 2}
     - target: {fileID: 8734814178722551829, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: m_Name
       value: Blox (2)
@@ -2280,7 +2280,7 @@ PrefabInstance:
     - target: {fileID: 5790160534953873507, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: value
       value: 
-      objectReference: {fileID: 11400000, guid: b4d14802c2ebdb04885e589abd3ce572, type: 2}
+      objectReference: {fileID: 11400000, guid: 67333ce423efac342aface75a8db0fe5, type: 2}
     - target: {fileID: 8734814178722551829, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: m_Name
       value: Blox (7)
@@ -2378,7 +2378,7 @@ PrefabInstance:
     - target: {fileID: 5790160534953873507, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: value
       value: 
-      objectReference: {fileID: 11400000, guid: b4d14802c2ebdb04885e589abd3ce572, type: 2}
+      objectReference: {fileID: 11400000, guid: 930e7fad08d036044b2469fca2cd2c8b, type: 2}
     - target: {fileID: 8734814178722551829, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: m_Name
       value: Blox (20)
@@ -2454,7 +2454,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6643432653011195377, guid: b5e296216e516a44fb7ca6e0e08e630f, type: 3}
       propertyPath: properValue
-      value: '"World"'
+      value: '"Nice"'
       objectReference: {fileID: 0}
     - target: {fileID: 8324409666421548936, guid: b5e296216e516a44fb7ca6e0e08e630f, type: 3}
       propertyPath: m_Name
@@ -2529,7 +2529,7 @@ PrefabInstance:
     - target: {fileID: 5790160534953873507, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: value
       value: 
-      objectReference: {fileID: 11400000, guid: b4d14802c2ebdb04885e589abd3ce572, type: 2}
+      objectReference: {fileID: 11400000, guid: 70568e5212490c74b8cbdcd8b257ce7c, type: 2}
     - target: {fileID: 8734814178722551829, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: m_Name
       value: Blox (1)
@@ -2601,7 +2601,7 @@ PrefabInstance:
     - target: {fileID: 5790160534953873507, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: value
       value: 
-      objectReference: {fileID: 11400000, guid: b4d14802c2ebdb04885e589abd3ce572, type: 2}
+      objectReference: {fileID: 11400000, guid: e6be501a2ff3e5e40a5c837c1e29a769, type: 2}
     - target: {fileID: 8734814178722551829, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: m_Name
       value: Blox (15)
@@ -2678,7 +2678,7 @@ PrefabInstance:
     - target: {fileID: 5790160534953873507, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: value
       value: 
-      objectReference: {fileID: 11400000, guid: b4d14802c2ebdb04885e589abd3ce572, type: 2}
+      objectReference: {fileID: 11400000, guid: e6be501a2ff3e5e40a5c837c1e29a769, type: 2}
     - target: {fileID: 8734814178722551829, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: m_Name
       value: Blox (13)
@@ -2755,7 +2755,7 @@ PrefabInstance:
     - target: {fileID: 5790160534953873507, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: value
       value: 
-      objectReference: {fileID: 11400000, guid: b4d14802c2ebdb04885e589abd3ce572, type: 2}
+      objectReference: {fileID: 11400000, guid: 930e7fad08d036044b2469fca2cd2c8b, type: 2}
     - target: {fileID: 8734814178722551829, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: m_Name
       value: Blox (22)
@@ -4492,7 +4492,7 @@ PrefabInstance:
     - target: {fileID: 5790160534953873507, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: value
       value: 
-      objectReference: {fileID: 11400000, guid: b4d14802c2ebdb04885e589abd3ce572, type: 2}
+      objectReference: {fileID: 11400000, guid: e71f799f55df8514fba4387b03db1157, type: 2}
     - target: {fileID: 8734814178722551829, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: m_Name
       value: Blox (9)
@@ -4741,7 +4741,7 @@ PrefabInstance:
     - target: {fileID: 5790160534953873507, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: value
       value: 
-      objectReference: {fileID: 11400000, guid: b4d14802c2ebdb04885e589abd3ce572, type: 2}
+      objectReference: {fileID: 11400000, guid: e6be501a2ff3e5e40a5c837c1e29a769, type: 2}
     - target: {fileID: 8734814178722551829, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: m_Name
       value: Blox (16)
@@ -4818,7 +4818,7 @@ PrefabInstance:
     - target: {fileID: 5790160534953873507, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: value
       value: 
-      objectReference: {fileID: 11400000, guid: b4d14802c2ebdb04885e589abd3ce572, type: 2}
+      objectReference: {fileID: 11400000, guid: a50332becc97b3e4f9f1ec0726db6a64, type: 2}
     - target: {fileID: 8734814178722551829, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: m_Name
       value: Blox (28)
@@ -4895,7 +4895,7 @@ PrefabInstance:
     - target: {fileID: 5790160534953873507, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: value
       value: 
-      objectReference: {fileID: 11400000, guid: b4d14802c2ebdb04885e589abd3ce572, type: 2}
+      objectReference: {fileID: 11400000, guid: a50332becc97b3e4f9f1ec0726db6a64, type: 2}
     - target: {fileID: 8734814178722551829, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: m_Name
       value: Blox (27)
@@ -5106,7 +5106,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6643432653011195377, guid: b5e296216e516a44fb7ca6e0e08e630f, type: 3}
       propertyPath: properValue
-      value: '"Hello"'
+      value: True
       objectReference: {fileID: 0}
     - target: {fileID: 8324409666421548936, guid: b5e296216e516a44fb7ca6e0e08e630f, type: 3}
       propertyPath: m_Name
@@ -5176,7 +5176,7 @@ PrefabInstance:
     - target: {fileID: 5790160534953873507, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: value
       value: 
-      objectReference: {fileID: 11400000, guid: b4d14802c2ebdb04885e589abd3ce572, type: 2}
+      objectReference: {fileID: 11400000, guid: 2bfce31b533143c49ab4b9ce84dd207e, type: 2}
     - target: {fileID: 8734814178722551829, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: m_Name
       value: Blox (18)
@@ -5475,7 +5475,7 @@ PrefabInstance:
     - target: {fileID: 5790160534953873507, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: value
       value: 
-      objectReference: {fileID: 11400000, guid: b4d14802c2ebdb04885e589abd3ce572, type: 2}
+      objectReference: {fileID: 11400000, guid: f4991c4d3b055ab4194420245e060f25, type: 2}
     - target: {fileID: 8734814178722551829, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: m_Name
       value: Blox (31)
@@ -5557,7 +5557,7 @@ PrefabInstance:
     - target: {fileID: 5790160534953873507, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: value
       value: 
-      objectReference: {fileID: 11400000, guid: b4d14802c2ebdb04885e589abd3ce572, type: 2}
+      objectReference: {fileID: 11400000, guid: 930e7fad08d036044b2469fca2cd2c8b, type: 2}
     - target: {fileID: 8734814178722551829, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: m_Name
       value: Blox (23)
@@ -5634,7 +5634,7 @@ PrefabInstance:
     - target: {fileID: 5790160534953873507, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: value
       value: 
-      objectReference: {fileID: 11400000, guid: b4d14802c2ebdb04885e589abd3ce572, type: 2}
+      objectReference: {fileID: 11400000, guid: 70568e5212490c74b8cbdcd8b257ce7c, type: 2}
     - target: {fileID: 8734814178722551829, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: m_Name
       value: Blox (8)
@@ -5779,7 +5779,7 @@ PrefabInstance:
     - target: {fileID: 5790160534953873507, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: value
       value: 
-      objectReference: {fileID: 11400000, guid: b4d14802c2ebdb04885e589abd3ce572, type: 2}
+      objectReference: {fileID: 11400000, guid: 60cddafa8d13210409cf30a219e57df7, type: 2}
     - target: {fileID: 8734814178722551829, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: m_Name
       value: Blox (4)
@@ -5913,7 +5913,7 @@ PrefabInstance:
     - target: {fileID: 5790160534953873507, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: value
       value: 
-      objectReference: {fileID: 11400000, guid: b4d14802c2ebdb04885e589abd3ce572, type: 2}
+      objectReference: {fileID: 11400000, guid: 70568e5212490c74b8cbdcd8b257ce7c, type: 2}
     - target: {fileID: 8734814178722551829, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: m_Name
       value: Blox (17)
@@ -5990,7 +5990,7 @@ PrefabInstance:
     - target: {fileID: 5790160534953873507, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: value
       value: 
-      objectReference: {fileID: 11400000, guid: b4d14802c2ebdb04885e589abd3ce572, type: 2}
+      objectReference: {fileID: 11400000, guid: 55bfaba5882400745965b2e1859feafb, type: 2}
     - target: {fileID: 8734814178722551829, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: m_Name
       value: Blox (32)
@@ -6067,7 +6067,7 @@ PrefabInstance:
     - target: {fileID: 5790160534953873507, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: value
       value: 
-      objectReference: {fileID: 11400000, guid: b4d14802c2ebdb04885e589abd3ce572, type: 2}
+      objectReference: {fileID: 11400000, guid: f4991c4d3b055ab4194420245e060f25, type: 2}
     - target: {fileID: 8734814178722551829, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: m_Name
       value: Blox (29)
@@ -6218,7 +6218,7 @@ PrefabInstance:
     - target: {fileID: 5790160534953873507, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: value
       value: 
-      objectReference: {fileID: 11400000, guid: b4d14802c2ebdb04885e589abd3ce572, type: 2}
+      objectReference: {fileID: 11400000, guid: 91efd6b07f19b434bb33f721ad0067a9, type: 2}
     - target: {fileID: 8734814178722551829, guid: 2efad279775058d4297a2d25e6a692ba, type: 3}
       propertyPath: m_Name
       value: Blox (6)
@@ -6294,7 +6294,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6643432653011195377, guid: b5e296216e516a44fb7ca6e0e08e630f, type: 3}
       propertyPath: properValue
-      value: print
+      value: while
       objectReference: {fileID: 0}
     - target: {fileID: 8324409666421548936, guid: b5e296216e516a44fb7ca6e0e08e630f, type: 3}
       propertyPath: m_Name
@@ -6554,6 +6554,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5523360343635942103, guid: 2429a993369984849b84f773a85bf458, type: 3}
+      propertyPath: goal
+      value: Print "Nice 67" infinitely
+      objectReference: {fileID: 0}
+    - target: {fileID: 5523360343635942103, guid: 2429a993369984849b84f773a85bf458, type: 3}
       propertyPath: goalTMPro
       value: 
       objectReference: {fileID: 1562666971}
@@ -6584,11 +6588,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 359000431908757321, guid: c41449ccd4e62964cb954e498ec181d2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.9375
+      value: -2.1875
       objectReference: {fileID: 0}
     - target: {fileID: 359000431908757321, guid: c41449ccd4e62964cb954e498ec181d2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.0625
+      value: -4.6875
       objectReference: {fileID: 0}
     - target: {fileID: 359000431908757321, guid: c41449ccd4e62964cb954e498ec181d2, type: 3}
       propertyPath: m_LocalPosition.z

@@ -13,8 +13,12 @@ public class BloxpointParent : MonoBehaviour
         children = GetComponentsInChildren<Bloxpoint>();
     }
 
+    public AudioClip correct;
+    public AudioClip incorrect;
+
     public void Run(){
         bool isCorrect = SyntaxCheck();
+        AudioManager.Instance.PlaySFX(isCorrect ? correct : incorrect);
         if(isCorrect){
             levelEnd.gameObject.SetActive(true);
             levelEnd.DisplayMessage(true);
